@@ -1,0 +1,40 @@
+ 
+ table,tr,td,thead,th {
+ 
+    border-collapse: collapse;
+    padding: 15px 60px;
+    border-bottom: 1px solid #ddd;
+     margin: 0px auto; 
+     border-color: rgba(255, 255, 255, 0.250);
+     }
+     table{
+       
+         width: 75% ;
+     }
+     .footer{
+height: 100px;
+     }
+     table{
+     background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+           background: linear-gradient(to right, #25c481, #25b7c4);
+           font-family: 'Roboto', sans-serif;}
+   
+           table{
+               -webkit-text-fill-color: white;
+           }
+       .hidder{
+           text-align: center;
+           text-transform: uppercase;
+           height: 60px;
+           font-size: 30px;
+           
+          }
+      tbody{
+         align-content: right;
+      }
+       
+    .rowOne{
+        background-color:  rgba(255, 255, 255, 0.250);
+    }
+
+           
