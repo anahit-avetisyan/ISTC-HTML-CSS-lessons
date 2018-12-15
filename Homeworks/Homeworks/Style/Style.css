@@ -20,7 +20,7 @@ height: 100px;
            font-family: 'Roboto', sans-serif;}
    
            table{
-               -webkit-text-fill-color: white;
+               color: white;
            }
        .hidder{
            text-align: center;
@@ -35,6 +35,9 @@ height: 100px;
        
     .rowOne{
         background-color:  rgba(255, 255, 255, 0.250);
+    }
+    .heart{
+        color: crimson;
     }
 
            
