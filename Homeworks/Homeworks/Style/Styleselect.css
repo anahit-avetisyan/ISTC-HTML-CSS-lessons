@@ -1,0 +1,178 @@
+ 
+ .red{
+    height: 650px;
+    width: 100%;
+    background-color: #C41230;
+ 
+ }
+ .blue{
+    height: 650px;
+    width: 100%;
+     background-color:#00446A;
+     
+ }
+ .one{
+     display: inline-block;
+     height: 600px;
+     width: 30%;
+     background-color:#E3E3E3 ;
+     vertical-align: top;
+     margin: 10px;
+     border: 1px solid;
+    
+     
+ }
+ .second{
+    display: inline-block;
+    height: 600px;
+    width: 65%;
+    background-color:#F8F8F8 ;
+    margin: 10px  ;
+    border: 1px solid black;
+    vertical-align: top;
+    
+ }
+  
+   .secondImg{
+     height: 400px;
+     width: 100%;
+ }
+  .mit{
+      color: #595A60;
+      text-align: center;
+      
+  }
+  .inputOne{
+      text-align: center;
+      margin: 2px;
+  }
+  .button{
+      background-color: #A22921;
+      color: white;
+     
+     
+  }
+  .firstImg{
+      height: 40%;
+      width: 60%;
+   
+  }
+  .three{
+    display: inline-block;
+    height: 600px;
+    width: 30%;
+    background-color:#F8F8F8 ;
+    margin: 10px  ;
+    border: 1px solid black;
+    vertical-align: top;
+  }
+  .obama{
+      background-color: #196896;
+      margin: 2px;
+  }
+  .obamaOne{
+      margin: 20px;
+  }
+  h4{
+      color: #6D6D6D;
+      text-align: center
+  }
+  .obamalogo{
+      color: #038BC8;
+      
+      position: relative;
+      bottom: -60px;
+      margin-left: 30%;
+      
+  }
+  .email{
+      text-align: center;
+      margin: 5px;
+      padding: 5px;
+      
+  }
+  .but{
+    margin: 5px;
+    padding: 5px;
+    color: white;
+   background-color: #BA1D35;
+  ;
+  }
+  .four{
+    display: inline-block;
+    height: 600px;
+    width: 65%;
+    background-color:#F8F8F8 ;
+    margin: 10px  ;
+    border: 1px solid black;
+    vertical-align: top;
+  }
+  .obamaFour{
+    background-color: #196896;
+    margin: 2px
+  }
+  .pObama{
+      color: #F8F8F8;
+       padding: 20px;
+       text-align: center;
+  }
+  .romney{
+      text-align: center
+  }
+  .picOne{
+      text-align: center;
+       
+     
+  }
+  .firstImg{
+     border: 5px solid white
+  }
+.imga{
+   padding: 15px;
+    background-color: #A20829;
+}
+h1{
+    text-align: center;
+    color: #0C4969;
+}
+ 
+.don{
+    color: #E3E3E3;
+    background-color: #A20829;
+}
+.container {
+    text-align: center;
+}
+.donate{
+    background-color: #11253D;
+   height: 20%;
+   width: 99%;
+   position:relative;
+   
+ margin: 2px
+
+}
+.inputR{
+    text-align: center
+    color:white;
+}
+body{
+    margin: 0;
+}
+.buttonOne{
+    background-color: #A51338;
+    color: #E3E3E3;
+    padding: 5px 40px;
+}
+.butt{
+    text-align: center
+}
+.romnbut{
+    background-color: #11253D;
+    border: 1px solid #213A54;
+    color:whitesmoke;
+    padding:  5px 30px;
+    margin: 5px;
+    
+    
+}
