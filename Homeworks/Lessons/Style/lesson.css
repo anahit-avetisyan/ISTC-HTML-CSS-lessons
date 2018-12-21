@@ -1,0 +1,140 @@
+html, body, .wrapper{
+    width: 100%;
+    height: 100%;
+}
+body{
+    margin: 0%;
+}
+.wrapper{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+}
+.header{
+    height:10%;
+    width:100%;
+    font-size:20px;
+    position: relative;
+    text-align:center;
+}
+
+.header>div{
+    height: 100%;
+    float: left;
+    width: 14%;
+    color: #17AACB;;
+    display: inline-block
+
+}
+.header>div>span{
+    line-height: 93px;
+    margin-left:3px;
+}
+nav{
+    width: 86%;
+    display: inline-block;
+    height: 100%;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    float: right;
+   
+}
+.mobile-menu-icon{
+    display:none;
+    position:absolute;
+    right:1%;
+    line-height: 93px;
+
+}
+ 
+.wrapper>div:first-child>div:last-child{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1%;
+    margin: 0;
+}
+ul li a {
+    text-decoration: none;  
+    font-family: arial;
+    color: black;
+}
+li a:hover:not(.active) {
+    color: rgb(180, 5, 28);
+}
+.home{
+    color: rgb(26, 185, 248);
+}
+.home:hover:not(.active){
+    color: rgb(180, 5, 28);
+}
+ 
+ span{
+     margin: 0;
+ }
+.wrapper>div:last-child{
+    width: 100%;
+    height: 90%;
+    background-image: url(../images/background4.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+.icon_container> i {
+margin-left: 5px;
+}
+.wrapper>div:last-child>:first-child{
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+/* .wrapper>div:last-child>:first-child{
+    padding-top:25%;
+    text-align: center;
+    color: #fff;
+     display: table;
+     vertical-align: middle; */
+}
+
+p{
+    font-size: 40px;
+    font-family: Bradley Hand, cursive;
+    margin: 0%
+}
+
+.txt2{
+    font-size: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.txt3{
+    font-size: 30px;
+}
+button{
+    margin-top: 15px;
+    text-align: center;
+}
+.button>button{
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(26, 185, 248);
+    color: rgb(255, 255, 255);
+}
+ 
+
+@media only screen and (max-width: 1350px) {
+   nav{
+       display:none;
+   }
+
+   .mobile-menu-icon{
+       display:block;
+   }
+  }
