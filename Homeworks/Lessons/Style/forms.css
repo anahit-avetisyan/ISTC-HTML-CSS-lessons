@@ -1,0 +1,20 @@
+  form{
+      height: 200px;
+      width: 200px;
+      margin: auto;
+  }
+input{
+    margin: 2px;
+    padding: 5px;
+}
+button{
+    width: 150px;
+    text-align: center;
+background-color: blue;
+color: aliceblue;
+padding: 10px;
+margin-left: 18px;
+}
+legend{
+    text-align: center
+}
