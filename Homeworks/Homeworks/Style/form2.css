@@ -120,8 +120,6 @@ input[type=text]{
      border: none;
      margin-top: 1%; 
      box-sizing: border-box;
-     min-width: 50px;  
-     max-width: 300px;
  }
  
   
