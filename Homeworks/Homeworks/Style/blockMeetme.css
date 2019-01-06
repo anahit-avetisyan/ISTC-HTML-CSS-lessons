@@ -11,10 +11,8 @@ body{
     margin: 0;
     background-color:  white;
 }
-.clear{
-    clear: both;
-}
-.wrapper>div:nth-child(1){
+
+header{
     box-sizing: border-box;
     height: 10%;
     width: 100%;
@@ -22,42 +20,52 @@ body{
 }
 .wrapper>div:nth-child(2){
     box-sizing: border-box;
-    height: 80%;
+    height: 90%;
     width: 100%;
-  
 }
-.wrapper>div:nth-child(3){
-    box-sizing: border-box;
-    height: 10%;
-    width: 100%;
-    background-color: white;
-}
+
 .firstcontainer{
-    display: inline-block;
+    float: left;
     height: 8%;
     width: 40%;
-    padding-bottom: 1%
+    padding-bottom: 1%;
+    box-sizing: border-box;
 }
 .firstimage{
+    float: left;
     padding-left: 8%;
     box-sizing: border-box;
 }
-.containa {
+nav {
     height: 8%;
-    width: 56%;
-     
+    width: 56%; 
     margin-bottom: 2%;
     box-sizing: border-box;
     float: right;
     padding: 2.5% 0
 }
-a{
 
-    padding: 1.1%;
-}
 .containa>a:nth-child(1){
     color: #17AACB;
 } 
+   ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1%;
+    margin: 0;
+}
+ul li a {
+    text-decoration: none;  
+    font-family: arial;
+    color: black;
+}
+ 
+.menu{
+    color: #17AACB
+}
+.clear{
+    clear: both;
+}
 .secondcontainer{
     display: inline-block;
     padding: 1%;
@@ -102,12 +110,3 @@ i{
     padding: 0.8%;
 }
  
-li,ul{
-    list-style: none;
-    display: inline;
-    padding: 0;
-    margin: 0;
-}
-.menu{
-    color: #17AACB
-}
