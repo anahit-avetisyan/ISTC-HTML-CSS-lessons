@@ -5,6 +5,7 @@
     border-radius: 60px;
     animation-duration: 2s; 
     position: relative;
+    animation-fill-mode: forwards;  
     
 }
  
