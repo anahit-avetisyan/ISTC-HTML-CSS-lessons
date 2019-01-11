@@ -1,12 +1,11 @@
-.animate{
+#animate{
     background-color: red;
     height: 60px;
     width: 60px;
     border-radius: 60px;
-    animation-name: example;
     animation-duration: 2s; 
     position: relative;
-   animation-play-state: inherit
+    
 }
  
 @keyframes example {
