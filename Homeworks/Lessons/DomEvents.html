@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<body onload="checkCookies()">
+
+    <!-- example1 oclick event, version1 , version 2-->
+<h1 onclick="this.innerHTML = 'Ooops!'">Click on this text!</h1>
+<h1 onclick="changeText(this)">Click on this text!</h1>
+
+ <!-- example2 displayDate funcctiony teghi kunena , erb buttony seghmenq-->
+<button onclick="displayDate()">The time is?</button>
+<p id="demo"></p>
+
+ <!-- example3 karogh enq naev assign anel function html dom elementin-->
+ <button id="myBtn">Try it</button>
+
+<p id="demo1"></p>
+
+<!-- example4 onload and onunload events , see the example on body-->
+
+<p id="demo2"></p>
+
+<!-- example5 onchange event-->
+Enter your name: <input type="text" id="fname" onchange="myFunction5()">
+
+<!-- example6 onmouseover, onmouseout events, version 1, version2 -->
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+
+<h1 onmouseover="style.color='red'"
+onmouseout="style.color='black'">
+Mouse over this text</h1>
+<!-- example7 onmousedown, onmouseup and onclick Events-->
+<div onmousedown="mDown(this)" onmouseup="mUp(this)"
+style="background-color:#D94A38;width:90px;height:20px;padding:40px;">
+Click Me</div>
+
+<!-- example8 onfocus Event-->
+Enter your name: <input type="text" onfocus="myFunction8(this)">
+
+<!-- example9 onkeydown Event-->
+<input type="text" onkeydown="myFunction9()">
+
+<!-- example0 animationend Event, see example 
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_animationstart
+-->
+
+
+<!-- The addEventListener() method -->
+
+
+
+
+<script>
+    //example1 
+    function changeText(h1) {
+      h1.innerHTML = "Ooops!";
+    }
+
+//example2
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
+//example3
+document.getElementById("myBtn").onclick = displayDate;
+
+function displayDate() {
+  document.getElementById("demo1").innerHTML = Date();
+}
+
+//example4 
+function checkCookies() {
+  var text = "";
+  if (navigator.cookieEnabled == true) {
+    text = "Cookies are enabled.";
+  } else {
+    text = "Cookies are not enabled.";
+  }
+  document.getElementById("demo").innerHTML = text;
+}
+//example5
+function myFunction5() {
+  var x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
+}
+//example6
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+//example7 
+function mDown(obj) {
+  obj.style.backgroundColor = "#1ec5e5";
+  obj.innerHTML = "Release Me";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="#D94A38";
+  obj.innerHTML="Thank You";
+}
+//example8 
+function myFunction8(x) {
+  x.style.background = "yellow";
+}
+//example9 
+function myFunction9() {
+  alert("You pressed a key inside the input field");
+}
+
+    </script>
+</body>
+</html>

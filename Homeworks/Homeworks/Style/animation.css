@@ -5,13 +5,13 @@
     border-radius: 60px;
     animation-duration: 2s; 
     position: relative;
-    
+    animation-fill-mode: forwards;
 }
  
 @keyframes example {
 from {background-color: red; left: 0%}
 
 
-  to {background-color: yellow; left:96%}
+  to {background-color: yellow; left:96.9%}
 }
  
