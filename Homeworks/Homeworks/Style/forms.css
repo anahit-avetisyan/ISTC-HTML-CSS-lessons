@@ -6,14 +6,15 @@ body,html{
 }
 /* Style the wrapper */
 .wrapper{
-    height: 70%;
+    height:auto;
     margin: auto;
     width: 50%;
     background-color: #424242;
     position: relative;
     top: 50%;
-   border:1px solid   #56B1CC;
-  box-shadow:1px 1px 2px 2px #56B1CC;
+   outline-style:  solid ; 
+   outline-color: #56B1CC;
+   border: none;
 transform: translateY(-50%);
 box-sizing: border-box;
 }
@@ -23,16 +24,14 @@ form{
     height: 99%;
     display:inline-block;
     box-sizing: border-box;
+    margin: 0;
+   padding: 0;
+   height: 99%;
+   width:100% ;
+   border: none;
+       
 }
-    fieldset{
-        display:inline-block;
-        margin: 0;
-        padding: 0;
-        height: 99%;
-        width:100% ;
-        border: none;
-        box-sizing: border-box;
-    }
+    
     /* Style the label to display next to the inputs */
 .label{
     width: 100%;
@@ -137,7 +136,7 @@ input{
  }
   
  textarea{
-    width: 6vw;
+    width: 15%;
     border:none;
     border-radius: 5%;
     background-color: #1B1B1B;
@@ -146,17 +145,18 @@ input{
     display: inline-block;
    
  } 
+ 
  /* Style the submit button */
  button{
      width: 20%;
-padding: 0.5%;
+     padding: 0.5%;
      border-radius: 10%;
-     border: 0 solid #CB6054;
+     border: none;
       color:#EC8177;
       background-color: #424242;
-      text-align: right; 
    margin-left: 70%;
-   box-shadow:1px 1px 1px 2px  #CB6054;
+   outline-style:  solid ; 
+   outline-color: #CB6054;;
    display: inline-block;
    box-sizing: border-box;
    font-size: 1.1vw;

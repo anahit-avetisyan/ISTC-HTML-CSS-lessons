@@ -7,9 +7,8 @@ body,html{
 
 /* Style the wrapper */
 .wrapper{
-    height: 72%;
+   height: auto;
     margin: auto;
-  
     width: 40%;
 background-color: #2D2D2D;
 position: relative;
@@ -23,26 +22,22 @@ form{
     width: 99%;
     height: 99%;
     display:inline-block;
- 
-    box-sizing: border-box;
-}
-.forlabel,.inputtypes{
-    width: 98;
-}
-fieldset{
-      
     margin: 0;
     padding: 0;
-    height: 99%;
-    width:100% ;
     border: none;
+    
     box-sizing: border-box;
 }
+ 
+ .inputtypes{
+  display: flex;
+ flex-direction: column;
+ }
 .forlabel{
-    height: 20%;
+    padding: 5% 0 5% 0;
     width: 100%;
     text-align: center;
-    margin: 0;
+    margin-bottom: 5%;
     border-bottom: 1px solid #181818;
     font-size: 1vw;
 }
@@ -134,6 +129,7 @@ input[type=text]{
      margin-top: 1%; 
      box-sizing: border-box;
      font-size: 1.5vw;
+     margin-bottom: 5%;
  }
  
   
