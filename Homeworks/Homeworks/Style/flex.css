@@ -55,7 +55,6 @@ nav ul a{
 .icon {
     color: #E4E4E4;
     display: none;
-     
     position: absolute;
     left: 50px;
     top: 0;
@@ -68,10 +67,9 @@ nav ul a{
     }
   }
   @media screen and (max-width: 500px) {
-    .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
-      left: 0;
+      right:50px;
       top: 0;
     }
     .topnav.responsive a {
@@ -190,9 +188,7 @@ footer>ul>li>a{
     display: inline-block;
     padding: 5px 10px;
 }
-.iconOne{
-    display: none;
-}
+
 footer ul a:hover{
     background: #777;
 }
