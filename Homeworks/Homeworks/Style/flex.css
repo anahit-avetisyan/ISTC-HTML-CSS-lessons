@@ -55,26 +55,26 @@ nav ul a{
 .icon {
     color: #E4E4E4;
     display: none;
+     
     position: absolute;
-      right: 0;
-      top: 0;
+    left: 50px;
+    top: 0;
   }
   @media screen and (max-width: 500px) {
     nav ul a{display: none;}
     nav ul a.icon {
-      float: right;
-      display: block;
+   display: block;
+       
     }
   }
   @media screen and (max-width: 500px) {
-    /* .topnav.responsive {position: relative;} */
+    .topnav.responsive {position: relative;}
     .topnav.responsive .icon {
       position: absolute;
-      right: 0;
+      left: 0;
       top: 0;
     }
     .topnav.responsive a {
-      float: none;
       display: block;
     }
   }
@@ -242,7 +242,7 @@ form>input:nth-child(2){
         margin-bottom: 3%;
     }
   }
-  @media only screen and (max-width: 785px) {
+  /* @media only screen and (max-width: 785px) {
     header{
         flex-direction: column;
 
@@ -251,7 +251,7 @@ form>input:nth-child(2){
         margin: 10px 10px;
     }
     
-  }
+  } */
   @media only screen and (max-width: 785px) {
     nav>ul{
         flex-direction: column;
