@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="Style/flex.css">
 </head>
 <body>
     <div class="container">
         <header class="flex-container">
             <div class="logo">&#966;</div>
-            <nav>
+            <nav class="topnav" id="myTopnav">
                 <ul>
                     <li><a href="#">Famo.us University</a></li>
                     <li><a href="#">Demos</a></li>
                     <li><a href="#">Famo.us/Angular</a></li>
                     <li><a href="#">Help</a></li>
                     <li><a href="#">Blog</a></li>
+                   <li><a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                          </a>
+                        </li> 
                 </ul>
             </nav>
             <div class="download">
@@ -70,7 +75,7 @@
                       dolorum fuga.</p>
             </div>
         </div>
-        <footer>
+        <footer > 
             <ul>
                 <li><a href="#">Branding</a></li>
                 <li><a href="#">Terms</a></li>
@@ -84,5 +89,17 @@
             </form>
         </footer>
     </div>
+    <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+             
+            </script>
+            
 </body>
 </html>

@@ -36,6 +36,7 @@ header{
     border-radius: 50%;
 }
 nav{
+    overflow: hidden;
     width: 60%;
     text-decoration: none;
 }
@@ -51,6 +52,32 @@ nav ul a{
     display: inline-block;
     padding: 5px 10px;
 }
+.icon {
+    color: #E4E4E4;
+    display: none;
+    position: absolute;
+      right: 0;
+      top: 0;
+  }
+  @media screen and (max-width: 500px) {
+    nav ul a{display: none;}
+    nav ul a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    /* .topnav.responsive {position: relative;} */
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+    }
+  }
 nav ul a:hover{
     background: #777;
 }
@@ -163,6 +190,9 @@ footer>ul>li>a{
     display: inline-block;
     padding: 5px 10px;
 }
+.iconOne{
+    display: none;
+}
 footer ul a:hover{
     background: #777;
 }
@@ -220,9 +250,7 @@ form>input:nth-child(2){
     header>*{
         margin: 10px 10px;
     }
-    nav{
-        width: 100%;
-    }
+    
   }
   @media only screen and (max-width: 785px) {
     nav>ul{
@@ -234,5 +262,9 @@ form>input:nth-child(2){
     footer>ul{
         flex-direction: column;
         align-items: center;
+    }
+    footer form{
+        justify-content: center;
+      
     }
   }
