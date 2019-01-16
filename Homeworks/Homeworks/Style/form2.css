@@ -1,8 +1,9 @@
 body,html{
     height: 100%;
     width: 100%;
-  margin: 0;
-  background-color:white
+  margin: auto;
+  background-color:white;
+  
 }
 
 /* Style the wrapper */
@@ -25,7 +26,6 @@ form{
     margin: 0;
     padding: 0;
     border: none;
-    
     box-sizing: border-box;
 }
  
@@ -53,6 +53,7 @@ form{
     
 }
 .inputtypes{
+ 
     box-sizing: border-box;
     margin: 8% 5% 0 5%;
 }
@@ -60,6 +61,7 @@ form{
 
 input[type=text],input[type=email],input[type=tel],input[type=password]{
     padding: 1.5% 55% 1.5% 10%;
+    outline: none;
     border-radius: 30px;
     width: 35%;
     background-color: #D9D9D9;
@@ -68,6 +70,7 @@ input[type=text],input[type=email],input[type=tel],input[type=password]{
  
 }
 input[type=text]{
+    outline: none;
     background-image: url("../Images/follower.png");
     background-position: 1.5% 0.1%;
     background-repeat: no-repeat;
@@ -75,6 +78,7 @@ input[type=text]{
     font-size: 1vw;
  } 
  input[type=tel]{
+    outline: none;
     background-image: url("../Images/phone-call\ \(1\).png");
     background-position:  1.5% 0.1%;
     background-repeat: no-repeat;
@@ -84,6 +88,7 @@ input[type=text]{
   
   
  input[type=email]{
+    outline: none;
     background-image: url("../Images/email\ \(1\).png");
     background-position:  1.5% 0.1%;
     background-repeat: no-repeat;
@@ -91,6 +96,7 @@ input[type=text]{
     font-size: 1vw;
  } 
  input[type=password]{
+    outline: none;
     background-image: url("../Images/lock.png");
     background-position:  2% 2%;
     background-repeat: no-repeat;
@@ -98,6 +104,7 @@ input[type=text]{
     font-size: 1vw;
  } 
  .typecheckbox{
+    outline: none;
     box-sizing: border-box;
     margin: 0 5% 2% 5%;
     color: #D9D9D9;
@@ -112,9 +119,11 @@ input[type=text]{
     box-sizing: border-box;
     width: 100%;
     display: inline-block;
+   
  }
  /* Style the submit button */
  button{
+    outline: none;
     display: inline-block;  
      width: 45%;
      position: relative;
