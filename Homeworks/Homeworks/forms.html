@@ -11,6 +11,7 @@
     
 </head>
 <body>
+        <div id="result"></div>
    <div class="wrapper">
         <form>
                 <div class="label">
@@ -18,21 +19,21 @@
             </div>
             <div class="first-input">
                   
-            <input type="text" placeholder=" User Name...."  >
-                <input type="password" placeholder="Password...." minlength="6" >
+            <input type="text" placeholder=" User Name...." id="name" >
+                <input type="password" placeholder="Password...." minlength="6" id="password" >
             </div>
             <div class="second-input">
 
-                    <input type="email" placeholder="Email Address...." Autocomplete=”on”  >
-                    <input type="email" placeholder="Confirm Email...." >
+                    <input type="email" placeholder="Email Address...." Autocomplete=”on” id="email" >
+                    <input type="email" placeholder="Confirm Email...."disabled >
             </div>
             <div class="third-input">
-                    <input type="text" placeholder="Address...">
+                    <input type="text" placeholder="Address..." id="address">
                     <input type="text" placeholder="Zipcode..." disabled>
             </div>
             <div class="fourth-input">
                     <input type="tel" placeholder="Phone number..." disabled>
-                    <input type="tel" placeholder="Mobile Number...">
+                    <input type="tel" placeholder="Mobile Number..." id="phoneNumber">
             </div>
             <div class="textarea">
                <div class="calc">
@@ -40,11 +41,31 @@
                    <textarea name="result" size="2"></textarea>
                 </div>
                <div>
-                   <button>SIGN-IN NOW</button>
+                   <button id="btn" type="button">SIGN-IN NOW</button>
                 </div>
             </div>
        
         </form>
     </div>
+  
+    <script>
+        var nameuser = document.getElementById("name");
+        var password = document.getElementById("password");
+        var email = document.getElementById("email");
+        var address = document.getElementById("address");
+        var phoneNumber = document.getElementById("phoneNumber");
+        var submitButton = document.getElementById("btn");
+       
+        submitButton.addEventListener("click", function(event){
+      var textName= nameuser.value;
+      var textPassword = password.value;
+      var textEmail = email.value;
+      var textAddress = address.value;
+      var textPhonenumber = phoneNumber.value;
+    document.getElementById("result").innerHTML =" &hearts; &hearts; &hearts; " + "<br/> <b> &hearts; Information about your profile  &hearts; </b>" +"<b><br/> Your Name Is </b>" + textName 
+     + " <b><br/> Your Password Is </b> " + password+ " <b> <br/> Your Email Address Is </b> " + textEmail +  " <b><br/> Your Address Is </b>    " + textAddress  + 
+     " <b><br/> Your Phone Number Is <b/> " + textPhonenumber + " <br/> &hearts; &hearts; &hearts; ";
+})
+    </script>
 </body>
 </html>
