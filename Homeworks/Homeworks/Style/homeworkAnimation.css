@@ -4,7 +4,7 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    animation-duration: 5s; 
+    animation-duration: 3s; 
     position: relative;
     animation-fill-mode: forwards;
     margin-top: 10%;
@@ -17,23 +17,23 @@
     width: 100px;
     border-radius: 50%;
  
-    animation-duration: 5s; 
+    animation-duration: 3s; 
     position: relative;
     animation-fill-mode: forwards;
     
 }
 @keyframes example {
-    0%   { left:0px; top:0px;}
-    25%  { left:48%; top:0px;}
-    50%  {left:48%; top:100px;}
-    75%  { left:0px; top:130px;}
-    100% {  left:0px; top:130px;}
+    0%   { left:0px; top:0px;background-color: red}
+    25%  { left:8%; top:0px;background-color:cadetblue }
+    50%  {left:8%; top:100px;background-color:firebrick}
+    75%  { left:0px; top:130px;background-color:cadetblue }
+    100% {  left:0px; top:130px;background-color:black}
  
   }
   @keyframes example1{
-    0%   { right:0px; top:0px;}
-    25%  {  right:48%; top:0px;}
-    50%  { right:48%; top:-100px;}
-    75%  {  right:0px; top:-105px;}
-    100% {   right:0px; top:-105px;}
+    0%   { right:0px; top:0px;background-color:black}
+    25%  {  right:8%; top:0px;background-color:cadetblue }
+    50%  { right:8%; top:-100px;background-color:firebrick}
+    75%  {  right:0px; top:-100x;background-color:cadetblue }
+    100% {   right:0px; top:-100px;background-color:red}
   }
