@@ -164,6 +164,7 @@ input{
    font-size: 1.1vw;
  }
  #result{
+   max-width: 300px;
    height: auto;
    position:absolute;
    margin: 15px;
@@ -173,8 +174,9 @@ input{
    transition: 3s;
  }
 #result:hover{
+   max-width: 300px; max-width: 300px;
    transform: rotate(7deg);
-width: 500px;
+height: 500px;
 transition: width 2s linear 1s;
  background-color: #CB6054;
  
