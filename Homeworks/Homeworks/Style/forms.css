@@ -67,56 +67,56 @@ input{
 }
 .first-input>input[type=text] {
     background-image: url("../Images/User.png");
-    background-position: 7px 7px;
+    background-position:  9px 9px;
     background-repeat: no-repeat;
     font-size: 1vw;
     background-size: 7%;
  } 
  .first-input>input[type=password] {
     background-image: url("../Images/key.png");
-    background-position: 7px 7px;
+    background-position:  9px 9px;
     background-repeat: no-repeat;
     font-size: 1vw;
     background-size: 7%;
  }
  .second-input>input:nth-child(1) {
     background-image: url("../Images/email.png");
-    background-position: 7px 7px;
+    background-position:  9px 9px;
     background-repeat: no-repeat;
     font-size: 1vw;
     background-size: 7%;
  }
  .second-input>input:nth-child(2) {
     background-image: url("../Images/message.png");
-    background-position: 7px 7px;
+    background-position:  9px 9px;
     background-repeat: no-repeat;
     font-size: 1vw;
     background-size: 7%;
  }
  .third-input>input:nth-child(1) {
     background-image: url("../Images/pin.png");
-    background-position: 7px 7px;
+    background-position:  9px 9px;
     background-repeat: no-repeat;
     font-size: 1vw;
     background-size: 7%;
  }
  .third-input>input:nth-child(2) {
     background-image: url("../Images/zip-file.png");
-    background-position: 7px 7px;
+    background-position:  9px 9px;
     background-repeat: no-repeat;
     font-size: 1vw;
     background-size: 7%;
  }
  .fourth-input>input:nth-child(1) {
     background-image: url("../Images/telephone.png");
-    background-position: 7px 7px;
+    background-position:  9px 9px;
     background-repeat: no-repeat;
     font-size: 1vw;
     background-size: 7%;
  }
  .fourth-input>input:nth-child(2) {
     background-image: url("../Images/smartphone.png");
-    background-position: 7px 7px;
+    background-position: 9px 9px;
     background-repeat: no-repeat;
     background-size: 7%;
     font-size: 1vw;
@@ -175,7 +175,7 @@ input{
  }
 #result:hover{
    max-width: 300px; max-width: 300px;
-   transform: rotate(7deg);
+   transform: rotate(360deg);
 height: 500px;
 transition: width 2s linear 1s;
  background-color: #CB6054;
