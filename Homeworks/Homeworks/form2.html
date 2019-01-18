@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="Style/form2.css">
     <title>Creat an account</title>
@@ -10,23 +10,23 @@
 </head>
 <body>
     <div class="wrapper">
-        <form>
+        <form method="POST" enctype="multipart/form-data">
            
                <div class="forlabel">
                 <label class="account">Create an Account</label>
             </div>
 <div class="inputtypes">
     
-    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Name" id="loginName">
  
  
-    <input type="tel" class="input-res" placeholder="Phone number">
+    <input type="tel" class="input-res" placeholder="Phone number" id="loginPhoneNumber">
  
  
-    <input type="email" placeholder="Email">
+    <input type="email" placeholder="Email" id= "loginEmail" size="50">
  
  
-    <input type="password" placeholder="Password">
+    <input type="password" placeholder="Password" id="loginPassword">
  
 </div>
 <div class="typecheckbox">
@@ -35,11 +35,42 @@
 </div>
 <div class="buttonacc">
      
-<button>Creat Account</button>
+<button type="button" onclick="myFunction()" >Creat Account</button>
 </div>
  
         </form>
 
     </div>
+   
+    <script>
+              //post request
+    //    var data = {};
+    //        data.name = "Anahit";
+    //        data.age = 25;
+    //        data.Email="anahitavetisyan1993@gmail.com";
+    //        data.Password="1111111";
+     function myFunction() {
+        var email = document.getElementById("loginEmail").value;
+         var  password= document.getElementById("loginPassword").value;
+          var  name = document.getElementById("loginName").value;
+           var phoneNumber= document.getElementById("loginPhoneNumber").value;
+                var data = {name: name, password: password, email: email, phoneNumber: phoneNumber}
+    
+ 
+        var json = JSON.stringify(data);
+    var xhr = new XMLHttpRequest();
+   xhr.open("POST","http://rest.learncode.academy/api/learncode/friends", true);
+xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+xhr.send(json);
+xhr.onreadystatechange  = function () {
+  
+    if (xhr.readyState == 4 && xhr.status == "200") {
+        var users = JSON.parse(xhr.responseText);
+        console.table(users);
+    }  
+}
+     }
+     
+   </script>
 </body>
 </html>

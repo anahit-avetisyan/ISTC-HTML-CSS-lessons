@@ -72,7 +72,7 @@ input[type=text],input[type=email],input[type=tel],input[type=password]{
 input[type=text]{
     outline: none;
     background-image: url("../Images/follower.png");
-    background-position: 1.5% 0.1%;
+    background-position:  8px 3px;
     background-repeat: no-repeat;
     background-size: 5%;
     font-size: 1vw;
@@ -80,7 +80,7 @@ input[type=text]{
  input[type=tel]{
     outline: none;
     background-image: url("../Images/phone-call\ \(1\).png");
-    background-position:  1.5% 0.1%;
+    background-position:   8px 3px;
     background-repeat: no-repeat;
     background-size: 5%; 
     font-size: 1vw;
@@ -90,7 +90,7 @@ input[type=text]{
  input[type=email]{
     outline: none;
     background-image: url("../Images/email\ \(1\).png");
-    background-position:  1.5% 0.1%;
+    background-position:  8px 3px;
     background-repeat: no-repeat;
     background-size: 5%;
     font-size: 1vw;
@@ -98,7 +98,7 @@ input[type=text]{
  input[type=password]{
     outline: none;
     background-image: url("../Images/lock.png");
-    background-position:  2% 2%;
+    background-position:  8px 3px;
     background-repeat: no-repeat;
     background-size: 5%;
     font-size: 1vw;
