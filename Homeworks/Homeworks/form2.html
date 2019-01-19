@@ -57,20 +57,31 @@
                 var data = {name: name, password: password, email: email, phoneNumber: phoneNumber}
     
  
-        var json = JSON.stringify(data);
-    var xhr = new XMLHttpRequest();
-   xhr.open("POST","http://rest.learncode.academy/api/learncode/friends", true);
-xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
-xhr.send(json);
-xhr.onreadystatechange  = function () {
+    //     var json = JSON.stringify(data);
+    // var xhr = new XMLHttpRequest();
+//    xhr.open("POST","http://rest.learncode.academy/api/learncode/friends", true);
+// xhr.setRequestHeader('Content-type','application/json; charset=utf-8');
+// xhr.send(json);
+// xhr.onreadystatechange  = function () {
   
-    if (xhr.readyState == 4 && xhr.status == "200") {
-        var users = JSON.parse(xhr.responseText);
-        console.table(users);
-    }  
+//     if (xhr.readyState == 4 && xhr.status == "200") {
+//         var users = JSON.parse(xhr.responseText);
+//         console.table(users);
+//     }  
+// }
+//      }
+fetch("http://rest.learncode.academy/api/learncode/friends",{
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data)
+})
+.then(response => response.json()) // response.json() returns a promise
+    .then((response) => {
+      console.table(response); //returns the new item along with its ID
+    })
 }
-     }
-     
    </script>
 </body>
 </html>
