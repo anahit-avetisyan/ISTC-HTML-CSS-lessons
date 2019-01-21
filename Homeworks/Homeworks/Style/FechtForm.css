@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    background-image: url("http://wallpapersfan.ru/wp-content/uploads/2016/12/skachat-besplatno-oboi-zvezdnoe-nebo-dlya-rabochego-stola.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+#container {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.068);
+    height: 100%;
+    width: 100%;
+   
+}
+h2 {
+    color: white;
+}
+form {
+    border-radius: 4px;
+    min-width: 300px;
+    width: 36%;
+    background-color: rgba(255, 255, 255, 0.123);
+    max-width: 500px;
+    /*max-height: 580px;*/
+    align-content: center;    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+#headder {
+    height: auto;
+    margin: 6% 0 5% 0;
+    text-align: center;
+    font-size: 130%;
+    font-weight: bolder;
+    font-family: Arial White;
+}
+input, button {
+    padding: 2%;
+    margin:2% 12%;
+    border-radius: 5px;
+    border: none;
+    background-color:  rgba(255, 255, 255, 0.938);
+     
+}
+button {
+    border: none;
+    color: #F0F0F0;
+    font-weight: bold;
+    background: linear-gradient(to right, #a1abe9 0%, #71ead7 100%);
+    border-radius: 4px;
+    font-size: 100%;
+    outline: none;
+}
+#typeCheckbox {
+    margin-right: 0;
+    font-family: Arial;
+    margin-bottom: 10%;   
+}
+.labelForCheckbox {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+    color: white;
+}
+#footer {
+    margin: 7% 0 5% 0;
+    text-align: center;
+    font-size: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+a {
+    color: white;
+}
+#hidden {
+    color: #F0F0F0;
+    display: none;
+    text-align: center;
+    padding: 2px;;
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    margin:0  auto;
+    height: 30%;
+    width: 40%;
+    background-color:rgba(75, 75, 173, 0.137);
+    border-radius: 15px;
+}
+#PforHidden {
+ margin-top: 15px;
+ font-size: 150%
+}
+li { 
+    font-size: 120%
+}
+
+#span{
+    display: none;
+    color:red;
+    font-size: 80%;
+    padding: 0;
+    margin:0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+} 
+ 
+@media screen and (max-width: 990px){
+    #span{
+        /* display: none; */
+        color:red;
+        font-size: 80%;
+        padding: 0;
+        margin:0;
+        text-align: center;
+    } 
+    .labelForCheckbox {
+        font-size: 70%;
+    }
+}
+@media screen and (max-width: 837px){
+    #hidden {
+        color: #F0F0F0;
+        display: none;
+        text-align: center;
+        padding: 2px;;
+        top: 50%;
+        position: relative;
+        transform: translateY(-50%);
+        margin:0  auto;
+        height: 40%;
+        width: 80%;
+        background-color:rgba(75, 75, 173, 0.137);
+        border-radius: 15px;
+    } 
+}

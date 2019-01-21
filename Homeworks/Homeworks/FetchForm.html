@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Style/FechtForm.css">
+    <script src="JS/FetchForm.js"></script>
+    <title>&hearts;Fetch and Form &hearts;</title>
+</head>
+<body>
+    <div id="container">   
+        <form>
+            <h2 id="headder"><b>CREATE ACCOUNT</b></h2>
+            <input   type="text" placeholder="Name" id="loginName" >
+            <input   type="text" placeholder="Last Name" id="loginLastName">
+            <input   type="mail" placeholder="Your Email" id="loginEmail" >
+            <input   type="password" placeholder="Password" id="loginPassword">
+            <span id="span"></span>
+            <input   type="password" placeholder="Repeat your password" id= "RepeatPassword">
+            <div id="divorCheckbox">
+                <input id="typeCheckbox" type="checkbox">
+                <label for="typeCheckbox" class="labelForCheckbox">
+                    I agree all statements in <a href="#">Terms of service</a>
+                </label>
+            </div>
+            <button type="button" onclick="myFunction()">SIGN UP</button>
+            <p id="footer">Have already an account? <b><a href="#"> Login here </a> </b></p>        
+        </form>    
+    </div>
+    <div id="hidden">
+       <p id="PforHidden">   &hearts; &hearts; <b> USER INFORMATION &hearts; &hearts;</b></p>  
+    </div>  
+</body>
+</html>
