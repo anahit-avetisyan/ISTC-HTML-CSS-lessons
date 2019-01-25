@@ -1,4 +1,5 @@
 *{
+    font-family: Arial;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -17,10 +18,20 @@ body {
     background-color: rgba(255, 255, 255, 0.068);
     height: 100%;
     width: 100%;
-   
 }
 h2 {
     color: white;
+}
+#signIn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+#signUp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 form {
     border-radius: 4px;
@@ -29,11 +40,12 @@ form {
     background-color: rgba(255, 255, 255, 0.123);
     max-width: 500px;
     /*max-height: 580px;*/
-    align-content: center;    
+    /* align-content: center;     */
+    /* justify-content: space-around; */
     margin: auto;
     display: flex;
     flex-direction: column;
-    height: fit-content;
+    height:80%;
 }
 #headder {
     height: auto;
@@ -44,8 +56,8 @@ form {
     font-family: Arial White;
 }
 input, button {
-    padding: 2%;
-    margin:2% 12%;
+    padding: 2.2%;
+    margin:2% 10%;
     border-radius: 5px;
     border: none;
     background-color:  rgba(255, 255, 255, 0.938);
@@ -53,6 +65,7 @@ input, button {
      
 }
 button {
+    margin: 2% 10%;
     border: none;
     color: #F0F0F0;
     font-weight: bold;
@@ -61,10 +74,14 @@ button {
     font-size: 100%;
     outline: none;
 }
+#divForCheckbox {
+    margin-top: 7%;
+   
+}
 #typeCheckbox {
     margin-right: 0;
     font-family: Arial;
-    margin-bottom: 10%;   
+    margin-bottom: 3%;   
 }
 .labelForCheckbox {
     font-family: Arial, Helvetica, sans-serif;
@@ -103,7 +120,7 @@ li {
     font-size: 120%
 }
 
-#span{
+#span , #pforpass , #pforuser {
     display: none;
     color:red;
     font-size: 80%;
@@ -116,7 +133,7 @@ li {
 #spanOne {
     display: none;
     color:red;
-    font-size: 80%;
+    font-size: 60%;
     padding: 0;
     margin:0;
     text-align: center;
@@ -126,7 +143,7 @@ li {
 #spanForMail {
         display: none;
         color:red;
-        font-size: 80%;
+        font-size: 60%;
         padding: 0;
         margin:0;
         text-align: center;
@@ -135,7 +152,7 @@ li {
  #allelem{
     display: none;
     color:red;
-    font-size: 110%;
+    font-size: 60%;
     padding: 0;
     margin:0;
     text-align: center;
@@ -154,6 +171,16 @@ li {
         font-size: 70%;
     }
 }
+    @media screen and (max-width: 1100px){
+    form {
+        height: 70%;
+    }
+}
+@media screen and (max-width: 500px){
+    form {
+        height: 50%;
+    }
+}
 @media screen and (max-width: 837px){
     #hidden {
         color: #F0F0F0;
@@ -169,4 +196,25 @@ li {
         background-color:rgba(75, 75, 173, 0.137);
         border-radius: 15px;
     } 
+}
+
+.divForSign {
+    display: flex;
+    flex-direction: row;
+    color: #F0F0F0;
+    justify-content: space-evenly;
+    margin: 6% 0 3% 0;
+    font-size: 130%;   
+}
+#signUpp {
+    padding-bottom: 1%;
+    border-bottom: #71ead7;
+    border-bottom: 2px solid #212F41;
+}
+#signInn {
+    padding-bottom: 1%; 
+    border-bottom: #71ead7;   
+}
+#buttonTwo {
+    display: none;
 }

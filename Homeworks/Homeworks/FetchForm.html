@@ -10,25 +10,38 @@
 </head>
 <body>
     <div id="container">   
-        <form>
-            <h2 id="headder"><b>CREATE ACCOUNT</b></h2>
+        <form id="form">
+            <div class="divForSign">
+                <div id="signUpp" onclick="signUp()">Sign Up</div>
+                <div id="signInn" onclick="signIn()">Sign In</div>
+            </div>
+            <div id="signIn">
+                <input   type="text" placeholder="User Name" id="loginuserNameOne">
+                <p id="pforuser"></p>
+                <input   type="password" placeholder="Password" id="loginPasswordOne">
+                <p id="pforpass"></p>
+            </div>
+            <div id="signUp">
             <span id="allelem"></span>
             <input   type="text" placeholder="Name" id="loginName" >
-            <input   type="text" placeholder="Last Name" id="loginLastName">
+            <input   type="text" placeholder="User Name" id="loginuserName">
             <input   type="mail" placeholder="Your Email" id="loginEmail" >
             <span id="spanForMail"></span>
             <input   type="password" placeholder="Password" id="loginPassword">
             <span id="span"></span>
             <input   type="password" placeholder="Repeat your password" id= "RepeatPassword">
             <span id = "spanOne"></span>
-            <div id="divorCheckbox">
+        </div>
+            <div id="divForCheckbox">
                 <input id="typeCheckbox" type="checkbox">
                 <label for="typeCheckbox" class="labelForCheckbox">
                     I agree all statements in <a href="#">Terms of service</a>
                 </label>
             </div>
-            <button type="button" onclick="myFunction()">SIGN UP</button>
-            <p id="footer">Have already an account? <b><a href="#"> Login here </a> </b></p>        
+            <button id="buttonOne" type="button" onclick="myFunction()">CREAT ACCOUNT</button>
+            <button id="buttonTwo" type="button" onclick="myFunctionOne()">LOG IN</button>
+            <p id="footer">Have already an account? <b><a href="#" target = "_blank"  > Login here </a> </b></p>
+                 
         </form>    
     </div>
     <div id="hidden">
