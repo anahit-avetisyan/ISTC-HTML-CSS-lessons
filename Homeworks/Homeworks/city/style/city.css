@@ -23,7 +23,7 @@ body {
 .firstDiv {
     display: flex;
     flex-direction: column;
-    height: 35%;
+    height: 40%;
     width: 100%;
     background-image: url(../images/slide1.jpg);
     background-repeat: no-repeat;
@@ -37,14 +37,14 @@ body {
     text-align: center;
 }
 i {
-    font-size: 8%;
+    font-size: 65%;
     background-color: white;
-    padding: 2%;
+    padding: 3%;
     border-radius: 100%;
 }
 .forMenu {
     display: flex;
-    height: 15%;
+    height: 19%;
     width: 55%;
     background-color: white;
 }
@@ -135,25 +135,29 @@ h4{
     background-color: white;
 }
 #div0 , #div1, #div2 , #div3 {
-    width:100px;
-    height: 95px;
+    height: 110px;
+    width:105px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20%;
 }
 #div0 {
   background-image: url(../images/programming-code.svg);
+  background-color: #1BBC9B;
 }
 #div1 {
     background-image: url(../images/paper-plane.svg);
+    background-color: #E67F22;
 }
 #div2 {
     background-image: url(../images/public-museum-sign.png);
+    background-color: #3598DB;
 }
 #div3 {
     background-image: url(../images/beaker.svg);
+    background-color: #2ABD69;
 }
-#divTwo, .divFourth, .divFifth {
+#divTwo, #divFourth, #divFifth {
     display: flex;
     height:fit-content;
     width: 60%;
@@ -172,39 +176,43 @@ h4{
     font-size: 50%;
     color: #C1C1B6;
 }
- .imgOne, .imgTwo,.imgThree, .imgFour  {
+ .fourDiv1, .fourDiv2,.fourDiv3, .fourDiv4  {
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: initial;
-    height: 95px;
-    width:100px;
+    height: 110px;
+    width:105px;
+ }
+ .fourDiv1{
     background-image: url(../images/p1.jpg);
 }
-.imgTwo {
+.fourDiv2 {
     background-image: url(../images/p2.jpg);
 }
-.imgThree {
+.fourDiv3 {
     background-image: url(../images/p3.jpg);
 }
-.imgFour {
+.fourDiv4 {
     background-image: url(../images/p4.jpg);
 }
-.imgForOne, .imgForTwo, .imgForThree, .imgForFour {
+.FifthDiv1, .FifthDiv2, .FifthDiv3, .FifthDiv4 {
     margin-top:3%;
     background-size:cover;
     background-repeat: no-repeat;
     background-origin: initial;
-    height: 95px;
-    width:100px;
+    height: 110px;
+    width:105px;
+}
+.FifthDiv1{
     background-image: url(../images/p5.jpg);
 }
-.imgForTwo {
+.FifthDiv2 {
     background-image: url(../images/p6.jpg);
 }
-.imgForThree {
+.FifthDiv3 {
     background-image: url(../images/p7.jpg);
 }
-.imgForFour {
+.FifthDiv4 {
     background-image: url(../images/p8.jpg);
 }
 .ulForMenu {
@@ -240,11 +248,16 @@ h4{
         display: flex;
     } 
 }
-@media screen and (max-width: 800px) {
-    #divTwo, .divFourth, .divFifth, .secondDiv {
-        flex-wrap: wrap
+@media screen and (max-width: 1000px) {
+    #divTwo, #divFourth, #divFifth, .secondDiv {
+        flex-wrap: wrap;
+    }
+    #divFourth > div , #divTwo > div {
+        margin-top: 3%;
+    }
     }  
-    #divTwo > div, .divFourth > div, .divFifth > div{
+    @media screen and (max-width: 500px) {
+    #divTwo > div, #divFourth > div, #divFifth > div{
         margin: 1%;
         width: 60px;
         height: 60px;

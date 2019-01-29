@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <title>&hearts; FLEX &hearts; </title>
 </head>
-<body onload="myFunctionOne()">
+<body onload="myFunctionOne()" id="body" onresize="myFunctionTwo()">
     <div class="container">
         <div class="firstDiv">
             <div class="divForMenu">
-                <ul class="ulForMenu" id="hiddenUl">
+                <ul class="ulForMenu" id="hiddenUl" style="display:none">
                         <li><a class="aForHome" href="#">HOME</a></li>
                         <li><a href="#">SERVICES</a></li>
                         <li><a href="#">PORTFOLIO</a></li>
@@ -57,18 +57,8 @@
                 <p class="pDivThird">OUR PORTFOLIO</p>
                 <p class="pFourth">WHAT WE HAVE DONE SO FAR</p>
             </div>
-            <div class="divFourth">
-                <div class="imgOne"></div>
-                <div class="imgTwo"></div>
-                <div class="imgThree"></div>
-                <div class="imgFour"></div>
-            </div>
-            <div class="divFifth">
-                <div class="imgForOne"></div>
-                <div class="imgForTwo"></div>
-                <div class="imgForThree"></div>
-                <div class="imgForFour"></div>
-            </div>
+            <div id="divFourth"></div>
+            <div id="divFifth"></div>
         </div>
     </div>
 </body>

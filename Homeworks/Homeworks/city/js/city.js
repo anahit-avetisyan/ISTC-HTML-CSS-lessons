@@ -1,27 +1,32 @@
 function myFunctionOne() {
     var newDiv = document.getElementById("divTwo");
+    var divFour = document.getElementById("divFourth");
+    var divfive = document.getElementById("divFifth");
     for(var i = 0 ;i < 4;i++){
-        var div = document.createElement("div");
+        var div = document.createElement("DIV");
         newDiv.appendChild(div);
         div.id = "div" + i;
-        if( i == 0){
-            div.style.backgroundColor = "#1BBC9B"   
+    }
+    for(var j = 1; j < 5 ; j++){
+        var divTwo = document.createElement("DIV");
+        divFour.appendChild(divTwo);
+        divTwo.className = "fourDiv" + j;
         };
-        if( i == 1){
-            div.style.backgroundColor = "#E67F22";
-        };
-        if( i == 2){
-            div.style.backgroundColor = "#3598DB"   
-        };
-        if( i == 3){
-            div.style.backgroundColor = "#2ABD69"   
-        };
-    };
-};
+    for (var k = 1 ; k <5 ; k++){
+        var divThree = document.createElement("DIV");
+        divfive.appendChild(divThree);
+        divThree.className = "FifthDiv"+ k;
+        }
+    }
 function myFunction () {
     var hiddenUl = document.getElementById("hiddenUl");
     if (hiddenUl.style.display == "none") {
         hiddenUl.style.display = "flex";
     }
     else hiddenUl.style.display = "none"
+};
+function myFunctionTwo() {
+    if (document.getElementById("body").clientWidth > 672) {
+        hiddenUl.style.display = "none"
+    };
 };
