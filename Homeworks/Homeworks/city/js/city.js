@@ -26,7 +26,7 @@ function myFunction () {
     else hiddenUl.style.display = "none"
 };
 function myFunctionTwo() {
-    if (document.getElementById("body").clientWidth > 672) {
+    if (document.getElementById("body").clientWidth > 564) {
         hiddenUl.style.display = "none"
     };
 };

@@ -228,12 +228,18 @@ h4{
 .ulForMenu {
     display: flex;
     flex-direction: column;
-    background-color: rgba(69, 54, 151, 0.171);
+    background-color: rgba(128, 118, 185, 0.171);
     padding: 1%;
     display: none;
 }
 .ulForMenu > li {
+    padding: 1.2%;
+   
+}
+.ulForMenu > li:hover {
     padding: 1%;
+    background-color: rgba(55, 55, 104, 0.795);
+  color: black;
 }
 .divForMenu {
     display: flex;
