@@ -10,10 +10,10 @@ html {
     margin: 0;
 }
 body {
-    width: 70%;
+    width: 60%;
     height: 100%;
     margin: 0 auto;
-    min-width: 307.8px;
+    min-width: 530px;
 }
 .container {
     margin: auto;
@@ -23,51 +23,58 @@ body {
 .firstDiv {
     display: flex;
     flex-direction: column;
-    height: 40%;
+    height: fit-content;
     width: 100%;
-    background-image: url(../images/slide1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.329);
     align-items: center;
     box-sizing: border-box;
 }
+.overlay {
+    height:fit-content;
+    width: 100%;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .icons {
     width: 50%;
-    margin: 1% 0 2% 0;
+    margin: 1% 0 1% 0;
     text-align: center;
 }
 i {
-    font-size: 65%;
+    box-sizing: border-box;
+    font-size: 80%;
     background-color: white;
-    padding: 3%;
-    border-radius: 100%;
+    padding-top: 8px;
+    border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    text-align: center;
 }
 .forMenu {
     display: flex;
-    height: 19%;
-    width: 55%;
+    height: fit-content;
+    width: 68%;
     background-color: white;
 }
 .logo {
     background-image: url(../images/logo.png);
-    background-size: 100% 100%;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-origin: initial;
     width: 15%;
-    height: 100%;
+    height: 50px;
     background-color: white;
 }
 .menu {
     align-items: center;
     width: 100%;
     display: flex;
-    justify-content: space-between;
 }
 .pForFlex {
     color: red;
     font-weight: bold;
     font-size: 80%;
-    margin-left: 3%;
+    margin-left: 0;
 }
 ul {
     justify-content: flex-end;
@@ -75,7 +82,7 @@ ul {
     width: 100%;
     text-decoration: none;
     list-style: none;
-    font-size: 50%;
+    font-size: 60%;
     display: flex;   
 }
 a {
@@ -84,15 +91,14 @@ a {
     color: black;
 }
 li {
-    padding-right:5%;   
+    padding-right: 15px;   
 }
 .aForHome {  
     color: red;
 }
 .responsive {
-    margin-top: 2%;
+    margin: 5% 0 3% 0;
     display: flex;
-    justify-content: center;
     color: white;
     flex-direction: column;
     align-items: center;
@@ -100,21 +106,21 @@ li {
 h4{
     font-size: 80%;
     width: fit-content;
-    margin:5%;
-    border-bottom: 1px solid white;
+    padding-bottom: 3%;
+    border-bottom: 0.1px  solid white;
 }
 .pOne {
     margin: 4% 0 4% 0;
-    font-size: 60%;
+    font-size: 70%;
 }
 .pTwo {
     width: fit-content; 
     text-align: center; 
     margin: 4% 0 4% 0;
-    font-size: 50%;
+    font-size: 60%;
     color: white;
     padding: 5% ;
-    background-color: red;
+    background-color: #ED5240;
 }
 .secondDiv {
     display: flex;
@@ -135,8 +141,9 @@ h4{
     background-color: white;
 }
 #div0 , #div1, #div2 , #div3 {
-    height: 110px;
-    width:105px;
+    margin-right: 3%;
+    height: 120px;
+    width: 120px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 20%;
@@ -148,6 +155,7 @@ h4{
 #div1 {
     background-image: url(../images/paper-plane.svg);
     background-color: #E67F22;
+ 
 }
 #div2 {
     background-image: url(../images/public-museum-sign.png);
@@ -159,9 +167,9 @@ h4{
 }
 #divTwo, #divFourth, #divFifth {
     display: flex;
-    height:fit-content;
-    width: 60%;
-    justify-content: space-evenly;
+    height: fit-content;
+    width: 70%;
+    justify-content: space-between;
     background-color: white;
 }
 .pDivOne , .pDivThird {
@@ -180,8 +188,9 @@ h4{
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: initial;
-    height: 110px;
-    width:105px;
+    margin-right: 3%;
+    height: 120px;
+    width: 120px;
  }
  .fourDiv1{
     background-image: url(../images/p1.jpg);
@@ -196,12 +205,13 @@ h4{
     background-image: url(../images/p4.jpg);
 }
 .FifthDiv1, .FifthDiv2, .FifthDiv3, .FifthDiv4 {
+    margin-right: 3%;
     margin-top:3%;
     background-size:cover;
     background-repeat: no-repeat;
     background-origin: initial;
-    height: 110px;
-    width:105px;
+    height: 120px;
+    width: 120px;
 }
 .FifthDiv1{
     background-image: url(../images/p5.jpg);
@@ -217,50 +227,69 @@ h4{
 }
 .ulForMenu {
     display: flex;
-    background-color: white;
-    box-sizing: border-box;
-    width: fit-content;
-    padding-left: 1%;
+    flex-direction: column;
+    background-color: rgba(69, 54, 151, 0.171);
+    padding: 1%;
     display: none;
 }
 .ulForMenu > li {
-    padding: 0 10px
+    padding: 1%;
 }
 .divForMenu {
     display: flex;
-    width: 100%;
-    justify-content: flex-end
-}
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+ }
 .logoForMenu {
+    margin: auto;
     background-image: url(../images/logo.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     display: none;
-    width: 35px;
-    height: 35px; 
+    width: 20px;
+    height: 20px; 
+    margin-bottom: 3%;
 }
-@media screen and (max-width: 990px) {
+/* @media screen and (min-width: 957px) {
+    .divForMenu {
+        display:none;
+    }
+} */
+@media screen and (max-width: 957px) {
     .forMenu { 
         display: none;
     }
     .logoForMenu {
         display: flex;
-    } 
-}
+    }
+    #hiddenUl{
+        display: none;
+
+    }
+    }
+
+
 @media screen and (max-width: 1000px) {
     #divTwo, #divFourth, #divFifth, .secondDiv {
         flex-wrap: wrap;
+        justify-content: center ;
+        width: 80%;
+        margin: 0 auto
     }
-    #divFourth > div , #divTwo > div {
+    #divFourth > div , #divTwo > div,  #divFifth > div{
         margin-top: 3%;
+        margin-right: 3%;
     }
-    }  
-    @media screen and (max-width: 500px) {
+        
+    }
+    
+    /* @media screen and (max-width: 500px) {
     #divTwo > div, #divFourth > div, #divFifth > div{
         margin: 1%;
-        width: 60px;
+        width: px;
         height: 60px;
     } 
-}
+} */
    

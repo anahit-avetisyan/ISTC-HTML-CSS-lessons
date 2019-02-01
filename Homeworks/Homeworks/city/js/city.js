@@ -16,8 +16,8 @@ function myFunctionOne() {
         var divThree = document.createElement("DIV");
         divfive.appendChild(divThree);
         divThree.className = "FifthDiv"+ k;
-        }
-    }
+        };
+    };
 function myFunction () {
     var hiddenUl = document.getElementById("hiddenUl");
     if (hiddenUl.style.display == "none") {
