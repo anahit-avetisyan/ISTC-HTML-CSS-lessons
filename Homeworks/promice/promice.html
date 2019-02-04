@@ -1,27 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body >
+
+<body>
+    <!-- <button onclick="example()">click</button> -->
+    <p id="demo"></p>
+    <button onclick="example()">click</button>
+    <p id="demo1"></p>
     <ul id="ul"></ul>
     <script>
-         fetch("https://jsonplaceholder.typicode.com/todos")
-       .then(response => response.json())  
-      .then((response) => {
-          for(var i = 0; i<5; i++){
-            var contentLi = document.createElement("li");
-        for(var key in response[i]){
-            var contentUl = document.getElementById("ul").appendChild(contentLi).innerHTML += response[i][key];
-        }
-        }
-            
-       
-    })
-
+        // fetch("https://jsonplaceholder.typicode.com/todos")
+        //     .then(response => response.json())
+        //     .then((response) => {
+        //         for (var i = 0; i < 5; i++) {
+        //             var contentLi = document.createElement("li");
+        //             for (var key in response[i]) {
+        //                 var contentUl = document.getElementById("ul").appendChild(contentLi).innerHTML += "," + response[i][key];
+        //             }
+        //         }
+        //     })
+        // Callback unction with random
+        //  function example(random){
+        //  var random = document.getElementById("demo").innerHTML = Math.random();
+        //  function results(){
+        //  var result;
+        //         if (example  < 0.5){
+        //         result = "the result is low";
+        //         }
+                 
+        //         else if (example  >= 0.5 && example <0.8 ){
+        //             result = "the result is medium";
+        //         }
+        //         else {
+        //             result = "the result is high";
+        //         }
+                
+        //         console.log(result);
+        //     }
+        // }
+         
+                
+        var data = [
+            {name:"apple",
+            location: "Yerevan",
+            price: "250"},
+            {name:"bannana",
+            location: "Yerevan",
+            price: "550"},
+            {name:"orange",
+            location: "Yerevan",
+            price: "450"},
+            {name:"apricote",
+            location: "Yerevan",
+            price: "350"},
+            {name:"pineapple",
+            location: "Yerevan",
+            price: "2500"}
+        ]
+     fetch ("http://rest.learncode.academy/api/learncode/friends", {
+         method: "POST",
+         headers: {
+        "Content-Type": "application/json",
+    },
+      body: JSON.stringify(data)
+})
+.then(response => response.json())  
+    .then((response) => {
+      console.table(response);
+    }) 
     </script>
 </body>
+
 </html>
