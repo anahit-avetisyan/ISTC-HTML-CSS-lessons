@@ -10,14 +10,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
+    <div class="cover"> 
     <h3>&hearts; &hearts; &hearts; My To Do List &hearts; &hearts; &hearts;</h3>
     <div id="main"></div>
     <div class="forInput">
-    <input id="inputText" type="text" placeholder="add a new todo item...">
+    <input id="inputText" type="text" placeholder="add a new todo item..." onfocus ="this.value=''">
     <button class="add" type="button" onclick="addToDoList()">Add</button>
     <button class="showAll" type="button" onclick="showAllList()">Show All</button>
     <button class="showActive" type="button" onclick="showActiveList()">Show Active</button>
     <button class="showCompleted" type="button" onclick="showCompletedList()" >Show Completed</button>
     </div>
+</div>
 </body>
 </html>
