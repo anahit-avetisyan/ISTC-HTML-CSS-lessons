@@ -1,6 +1,10 @@
 var addList = [];
 function addToDoList() {
     var textInput = document.getElementById("inputText").value ;
+    if(textInput == ""){
+        alert ("Please fill fields");
+    }else
+    {
     addList.unshift(textInput);
     var divForAdd = document.createElement("DIV");
     var pForAdd = document.createElement("p");
@@ -14,10 +18,13 @@ function addToDoList() {
     var myList = document.getElementById("main");
     var appenddiv = document.getElementById("main").appendChild(divForAdd);
     var appendchechi = appenddiv.appendChild(icheckForAdd);
-    var appendp = appenddiv.appendChild(pForAdd).innerText = textInput;
+    
+    appenddiv.appendChild(pForAdd).innerText = textInput
+
     var appendi = appenddiv.appendChild(iForAdd);
     myList.insertBefore(divForAdd,myList.childNodes[0]);
     document.getElementsByClassName("far fa-check-square")[0].onclick = function myFunction() {
+        
         if (this.parentElement.getElementsByClassName("pForAddTodo")[0].style.color == "green") {
             this.style.color = "rgb(239, 108, 98)";
             this.parentElement.getElementsByClassName("pForAddTodo")[0].style.textDecorationLine ="line-through";
@@ -39,6 +46,7 @@ function addToDoList() {
             };
         };
     };
+};
 };
 var myallP = document.getElementsByTagName("P");
 function showActiveList() {
