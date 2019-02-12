@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html {
+    width: 100%;
+    
+    /* background-color: #37CA8A; */
+    color: #243238;
+}
+#wrapper {
+    min-width:750px ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.navForMenu {
+width: 100%;
+}
+.menu {
+    position: fixed;
+   top: 0px;
+   width: 100%;
+   z-index: 1034!important;
+    background-color: white;
+    display: flex;
+    padding: 3% 0;
+    padding-left:3%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.myMenu li :hover {
+    color: #37CA8A;
+}
+.divForLogo {
+    width: 25%;
+    height:40px;
+    background-image:url(../Images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.myMenu,.myMenu a {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 90%;
+    color: black;
+    font-weight: bolder;  
+}
+.myMenu {
+    height:40px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content:flex-end;
+}
+.myMenu > li {
+    margin: auto
+}
+.liForPages {
+    display: flex;
+}
+.fa-angle-down {
+    margin-left: 5%;
+}
+
+.Liabout{
+    width: 200%;
+}
+#menuHome {
+    color: #37CA8A;
+}
+.slideshow-wrapper {
+    width:100% ;
+}
+/* .slideShow {
+    width: 100%;
+    height: 500px;
+} */
+ 
+/* .slideShowOne {
+    width: 100%;
+    background-image: url("../Images/first.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    /* display: none; 
+    position: absolute; 
+}
+.slideShowTwo {
+    width: 100%;
+    background-image: url("../Images/second.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 500px;
+    position: absolute; 
+
+} */
+.services {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  
+}
+.services div {
+    width: 33.3%;
+    height: 350px;
+    text-align: center;
+    padding: 5%;
+    border: 0.5px solid #E5E7E9;
+    box-sizing: border-box;
+}
+h3,.fa-calculator,.fa-clipboard-list,.fa-phone-volume,.fa-thumbs-up,.fa-star,.fa-briefcase{
+    font-size: 200%;
+    margin-bottom: 5%;
+}
+.fa-arrow-right {
+    font-size: 100%;
+}
+.services div p {
+    letter-spacing: 0.025em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5%;
+    line-height: 155%;
+}
+.services div h3:hover {
+    transition: 1s;
+    color: #37CA8A;
+}
+.fa-arrow-right:hover {
+    transition: 1s;
+    color: #37CA8A;
+}
+.anderLookingFor {
+    width: 100%;
+    background-color: #37CA8A;
+   
+}
+.lookingFor { 
+    width: 90%;
+    height: fit-content;
+    background-color: #3A3C3E;
+    margin: auto;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+}
+.tableInput {
+    height: fit-content;
+    margin: 8% 3%;
+    width: 90%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.divForText {
+    margin-bottom: 7%;
+}
+.divForData div {
+    text-align: center;
+}
+.hlookingFor{
+    font: 700 130% 'Roboto', sans-serif;
+    letter-spacing: 0.02em;
+    color: #74787c;
+    margin-bottom: 5px;
+}
+.firstClass {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 200%;
+    line-height: 150%;
+}
+.pForLooking {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    line-height: 150%;
+}
+.button {
+    margin-top:10%;
+    display: flex;
+    justify-content: center;
+}
+.buttonOne,.buttonTwo {
+width: 22%;
+padding:0.5%;
+background-color:  #37CA8A;
+color: white;
+border:none;
+font-weight: 900;
+}
+.buttonOne:hover {
+    background-color: #3A3C3E;
+    border: 2px solid white;
+    color: #37CA8A;
+   transition:1s;
+
+}
+.buttonTwo:hover {
+    background-color: #3A3C3E;
+    border: 2px solid white;
+    color: #37CA8A;
+    transition:1s;
+
+}
+.PforOr {
+    margin: 2%;
+    color: white;
+    font-style: italic;
+}
+.divForData {
+    display: flex;
+    justify-content: space-between;
+}
+.divForData div h1 {
+    color: #37CA8A;
+    font-size: 450%; 
+}
+.divForData div p {
+    color: black;
+    font-size:90%; 
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.divForData div {
+    border-right: 0.2px solid #74787C;
+
+    padding-right: 5%;
+    height: 100%; 
+}
+.OurTeam {
+    width: 100%;
+    height: 800px;
+    background-color: white;
+}
+.DivForPteam{
+    width:100% ;
+    display: flex;
+    justify-content: center;
+}
+.OurTeam .DivForPteam p {
+    width: 30%;
+    font-size: 250%;
+    font-weight: 100;
+    margin-top:7%;
+    padding-bottom: 4%;
+
+    text-align: center; 
+    font-family: inherit;
+    
+}
+ 
+.Teamwrapper,.slideShowik {
+    display: flex;
+    width: 100%;
+    margin: 0 4%;
+    height: 600px;
+}
+hr {
+    border: 1px solid #F3F3F3;
+    width: 35%;
+    margin: auto;
+}
+.Teamwrapper span {
+    padding:2% 0;
+    
+}
+.numberTwo {
+    border-bottom: 5px solid #37CA8A;
+    border-top: 5px solid #37CA8A;
+}
+.fa-phone,.fa-envelope {
+    color: #37CA8A;
+    margin-right: 2%;
+    font-size: 120%;
+}
+.numberOne,.numberTwo,.numberThree {
+   width: 30%;
+   height:450px;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+    padding-top: 5%;
+
+}
+.infoJohn,.infoAmanda,.infoDavid {
+    display: flex;
+    flex-direction: column;
+    margin: 3% 5%;
+}
+.numberOne,.numberTwo {
+    border-right: 0.2px solid #F3F3F3;
+}
+
+.JohnDoe {
+background-image: url("https://cdn.punchng.com/wp-content/uploads/2018/09/25161312/Isco-e1537888405324.jpg");
+height:130px;
+width: 130px;
+border-radius:130px;
+background-size: cover;
+margin: 6% auto;
+}
+.DavidNicolson {
+    background-image: url("https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/03/02/09/henrikh-mkhitaryan.jpg?w968h681");
+    height:130px;
+    width: 130px;
+    border-radius:130px;
+    background-size: cover;
+    margin: 6% auto;
+    }
+    .AmandaSmith {
+        background-image: url("http://www.kritikanstvo.ru/movies/d/dearjohn/images/dearjohn_66719.jpg");
+        height:130px;
+        width: 130px;
+        border-radius:130px;
+        background-size: cover;
+        margin: 6% auto;
+        }
+.name {
+    font-weight: 500;
+    font-size: 150%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Request {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+} 
+.requestForm {
+width: 90%;
+height: 350px;
+background-color: #37CA8A;
+}
+ header {
+    text-align: center;
+    color: white;
+    margin: 5% 2%;
+}
+.spanRequest {
+    font-weight: 700;
+    font-size: 270%;
+    line-height: 1.2307;
+   
+}
+.spanCallback{
+    font-weight: 100;
+    font-size: 270%;
+    line-height: 1.2307
+}
+.formInput {
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.formInput input,.formInput button,.select {
+    width:23% ;
+    outline: none;
+    border: none;
+    padding: 1.2%;
+}
+select:hover {
+    color: #37CA8A;     
+}
+.select option:hover{
+    background-color:black;
+}
+.formInput button {
+    background-color: #37CA8A;
+    border: 2px solid white;
+    color: white;
+    font-weight: 900;
+} 
+.lastButton:hover {
+background-color: black;
+}
+@media screen and (max-width: 800px) {
+    .navForMenu {
+        display: none
+    }
+    .menu{
+    display: flex;
+     
+    }
+        /* .divForLogo {
+            margin-left: 40%;
+        } */
+    .services div{
+        width: 100%;
+        padding: 5%;
+    }
+    .divForData {
+        display: flex;
+        flex-wrap:wrap;
+        width: 100%;
+    } 
+    .divForData div {
+        width: 100%;
+        border-bottom: 0.2px solid #74787C;
+        border-right: none;
+        font-size: 100%;
+        padding-bottom: 4%;
+    }
+    .hlookingFor{
+        font: 700 100% 'Roboto', sans-serif;
+        letter-spacing: 0.01em;
+        color: #74787c;
+        margin-bottom: 5px;
+    }   
+    .firstClass {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 100%;
+        line-height: 150%;
+    }
+    .pForLooking {
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        font-size: 100%;
+        line-height: 150%;
+    }
+    .buttonOne,.buttonTwo {
+        width: 22%;
+        padding:0.5%;
+        background-color:  #37CA8A;
+        color: white;
+        border:none;
+        font-size:80%;
+        font-weight: 600;
+        }
+       .divForLogo {
+           width: 100%;
+       }
+       
+    }
+@media screen and (max-width: 900px) {
+    .myMenu li {
+        margin-right: 4%;
+    }
+    }
