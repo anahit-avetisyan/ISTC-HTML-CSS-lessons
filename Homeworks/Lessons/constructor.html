@@ -14,7 +14,7 @@
           this.age = age;
           this.nationality = nationality;
           this.allInfo= function(){
-              console.log("ALL Info: " + this.name + " " + this.surname + " " + this.age + " " + this.nationality);
+              return ("ALL Info: " + this.name + " " + this.surname + " " + this.age + " " + this.nationality);
           }
       }
       function Armenian(name,surname,age,nationality,education){
@@ -22,7 +22,7 @@
           this.allInfo();
           this.education = education;
           this.fullInfo = function(){
-              console.log(this.allInfo + ' ' + this.education)
+              console.log(this.allInfo() + ' ' + this.education)
           }
       }
       function ArmenianOne(name,surname,age,nationality,education){
