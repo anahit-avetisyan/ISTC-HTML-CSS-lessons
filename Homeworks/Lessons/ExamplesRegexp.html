@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Style/ExamplesRegexp.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- example 1 validation of phone number-->
+    <!-- <form action="" onsubmit="validate()">
+        <input type="text"id="phone-number" placeholder="phone number"/>  
+        <input type="text" id="postal-code" placeholder="postal code" /> 
+        <input type="submit" />
+      </form> -->
+      <!-- example 2 validation of uzername -->
+      <form id="form">
+            <div>
+                <label for="username">Username</label>
+                <input name="username" type="text" placeholder="Username" pattern="[a-z]{1,15}" id="username">
+            </div>
+        </form>
+    <script>
+        (function() {
+    
+    var input              = document.getElementById('username');
+    var form               = document.getElementById('form');
+    var elem               = document.createElement('div');
+            elem.id            = 'notify';
+            elem.style.display = 'none';
+
+            form.appendChild(elem);
+
+    input.addEventListener('invalid', function(event){
+        event.preventDefault();
+        if ( ! event.target.validity.valid ) {
+            input.className    = 'invalid animated shake';
+            elem.textContent   = 'Username should only contain lowercase letters e.g. john';
+            elem.className     = 'error';
+            elem.style.display = 'block';
+        }
+    });
+
+    input.addEventListener('input', function(event){
+        if ( 'block' === elem.style.display ) {
+            input.className = '';
+            elem.style.display = 'none';
+        }
+    });
+
+})();
+// function validate(){
+//   var phoneNumber = document.getElementById('phone-number').value;
+//   var postalCode = document.getElementById('postal-code').value;
+//   var phoneRGEX = /^[(]{0,1}[0-9]{3}[)]{0,1}[-\s\.]{0,1}[0-9]{3}[-\s\.]{0,1}[0-9]{4}$/;
+//   var postalRGEX = /^[A-Z]{1,2}[0-9]{1,2} ?[0-9][A-Z]{2}$/i;
+//   var phoneResult = phoneRGEX.test(phoneNumber);
+//   var postalResult = postalRGEX.test(postalCode);
+//   return ('"phone:"+phoneResult + ", postal code: "+postalResult ' );
+// }
+
+ </script>
+
+</body>
+</html>
