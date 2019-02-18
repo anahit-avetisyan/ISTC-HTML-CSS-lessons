@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <input type="text" id="input">
+    <p id="pForError"></p>
+    <button id="button" onclick="myFunction()">Click Me</button>
+</div>
+
+
+    <script>
+// function myFunction(){
+//     try {
+//         var input = document.getElementById("input")
+//         var p = document.getElementById("pForError")
+//         if(input.value == "")throw   "please fill field"
+//         if(input.value  >10) throw "your value grater than 10"
+//         if(input.value  <10) throw "your value less than 10" 
+//         if(input.value  ==10) throw  "your value is 10"
+//         if(!parseFloat(p.value)){
+//           throw  "please insert number" 
+//         }
+//         }
+// catch(e){
+//     p.innerHTML = "Error: " + e
+// }
+// finally{
+//     input.value  = ""
+// }
+// }
+function factorial(n){
+    if(n==0){
+        return 1
+    } 
+return n*factorial(n-1)
+}
+ console.log(factorial(5));
+    </script>
+</body>
+</html>
