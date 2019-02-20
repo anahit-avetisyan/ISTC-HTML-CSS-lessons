@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+class Person{
+    constructor(name,surname,age){
+        this.name = name;
+        this.surname = surname;
+        this.age = age;
+    }
+    information(){
+        console.log("My name is " + this.name + " " + this.surname + " I am "+ this.age)
+    }
+}
+// let person = new Person("Anahit","Avetisyan","25");
+// person.information();
+// console.log(person.__proto__);
+// console.log(Person.prototype)
+
+class PersonOne extends Person{
+    constructor(nation){
+         super("Anahit","Avetisyan","25");
+         this.nation = nation
+    }
+information(){
+    console.log("My name is " + this.name + " " + this.surname + " I am "+ this.age + this.nation) 
+}
+}
+let personOne = new PersonOne("armenian")
+console.log(personOne);
+console.log(personOne.__proto__);
+class PersonTwo extends  PersonOne {
+    constructor(){
+        super("Hay")
+    }
+}
+ let personTwo = new PersonTwo();
+ console.log(personTwo);
+        </script>
+</body>
+</html>
