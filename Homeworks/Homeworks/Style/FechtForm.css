@@ -27,11 +27,14 @@ h2 {
     display: flex;
     flex-direction: column;
     display: none;
+     
 }
 #signUp {
     width: 100%;
     display: flex;
     flex-direction: column;
+    
+
 }
 form {
     border-radius: 4px;
@@ -210,10 +213,12 @@ li {
     padding-bottom: 1%;
     border-bottom: #71ead7;
     border-bottom: 2px solid #212F41;
+    cursor: pointer;
 }
 #signInn {
     padding-bottom: 1%; 
     border-bottom: #71ead7;   
+    cursor: pointer;
 }
 #buttonTwo {
     display: none;
